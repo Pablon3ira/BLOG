@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+body{
+    background-color: aquamarine;
+    width:100vw ;
+    height: 100vh;
+}
+
+.title{
+background-color: blueviolet;
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    width: 20rem;
+    height: 90vh;
+}
+
+.dashboard{
+    width: 80vw;
+    height: 90wh;
+    background-color: blueviolet;
+}
+
+main{
+    width: 10rem;
+    height: 15rem;
+}
