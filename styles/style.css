@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+    width:100vw ;
+    height: 100vh;
+    border: 1px solid black;
+
+}
+
+.title{
+background-color: blueviolet;
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    width: 20rem;
+    height: 90vh;
+}
+
+.dashboard{
+    width: 80vw;
+    height: 90wh;
+    background-color: blueviolet;
+}
+
+main{
+    width: 10rem;
+    height: 15rem;
+}
+
+/*ESTILOS INDEX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #7bd4fe;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ff7e5f;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0);
+    text-align:center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+header {
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0);
+    text-align:center;
+    max-width: 500px;
+    width: 100%;
+    font-size: 2.5em;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 20px;
+    color: #ff7e5f ;
+    text-decoration: none;
+}

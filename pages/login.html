@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://content.wepik.com/statics/235408375/preview-page0.jpg" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>  Blog Login </h1>
+        </header>
+        <main>
+            <form class="subscription-form" action="auth.html"  method="get">
+                <label for="username">Usuario:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+
+                <div class="checkbox">
+                    <label><input type="checkbox" id="condic" value="first_checkbox" required /> Acepto las <a
+                            href="condiciones.html" class="conditions">Condiciones</a></label>
+                </div>
+                <button type="submit">Iniciar</button>
+            </form>
+            <p id="errorMsg"></p>
+        </main>
+        <footer>
+            <p>Puedes darte de baja en cualquier momento.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
