@@ -45,3 +45,15 @@ function displayTVShows(tvShows) {
 }
 
 document.addEventListener('DOMContentLoaded', fetchTVShows);
+// Seleccionamos el botón del menú hamburguesa
+const menuBtn = document.querySelector('.menu-hamburguesa-btn');
+
+// Seleccionamos el contenedor del menú
+const menuContainer = document.querySelector('.menu-hamburguesa-container');
+
+// Agregamos un evento de click al botón del menú
+menuBtn.addEventListener('click', () => {
+    // Toggle el estado del menú
+    menuBtn.classList.toggle('active');
+    menuContainer.classList.toggle('active');
+});

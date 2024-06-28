@@ -1,54 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8eaf6;
+  margin: 0;
+  padding: 20px;
 }
 
 #app {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
-    text-align: center;
-    color: #6d6c6c;
+  text-align: center;
+  color: #3949ab;
+  margin-bottom: 40px;
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 200px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .card-content {
-    padding: 15px;
+  padding: 20px;
 }
 
 .card-content h2 {
-    font-size: 18px;
-    margin: 0 0 10px;
-    color: #333;
+  font-size: 20px;
+  margin: 0 0 15px;
+  color: #1e88e5;
 }
 
 .card-content p {
-    font-size: 14px;
-    color: #666;
+  font-size: 16px;
+  color: #616161;
+  line-height: 1.5;
 }
+
 
 /* Estilos para el menú hamburguesa */
 
@@ -73,3 +82,67 @@ h1 {
     background-color: #fff;
     margin-bottom: 5px;
 }
+
+/* Estilos para el menú hamburguesa */
+.menu-hamburguesa {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-hamburguesa-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .menu-hamburguesa-btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .menu-hamburguesa-btn span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .menu-hamburguesa-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2e2e2e;
+    padding: 10px;
+    width: 25rem;
+    display: none;
+  }
+  
+  .menu-hamburguesa-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-hamburguesa-container li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-hamburguesa-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-hamburguesa-container a:hover {
+    background-color: #444;
+  }
+    /* Estilos para mostrar y ocultar el menú */
+    .menu-hamburguesa-btn.active span {
+      background-color: #fff;
+    }
+    
+    .menu-hamburguesa-container.active {
+      display: block;
+    }
