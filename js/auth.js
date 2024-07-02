@@ -8,7 +8,7 @@ const password = auth.get('password');
 console.log(password);
 
 // Función para cargar y validar usuarios desde JSON
-fetch('../js/usuarios.json')
+fetch('./js/usuarios.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar el archivo JSON');
