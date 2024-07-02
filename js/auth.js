@@ -15,7 +15,7 @@ fetch('../js/usuarios.json')
         if (user !== null) {
             window.location.href = 'blog.html'
         } else {
-            alert('Usuario incorrecto')
+            alert('Datos incorrectos')
             window.location.href = 'login.html' 
         }
     })
